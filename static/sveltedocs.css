@@ -2,6 +2,7 @@ html {
         --bg-1: #fff;
         --bg-2: #e0e6eb;
         --bg-3: #c2cdd6;
+        --sh-1: #13131333;
         --fg-1: #212121;
         --fg-2: #4d4d4d;
         --link: #1c7ed4;
@@ -11,10 +12,10 @@ html {
 
 @media (prefers-color-scheme: dark) {
     html {
-        --bg-1: #2e2e2e;
-        --bg-2: #4d4d4d;
-        --bg-3: #666;
-        --sh-1: #131313;
+        --bg-1: #2e2e2ecc;
+        --bg-2: #4d4d4dcc;
+        --bg-3: #666c;
+        --sh-1: #13131388;
         --fg-1: #e6e6e6;
         --fg-2: #b3b3b3;
         --fg-3: #999;
@@ -24,17 +25,20 @@ html {
     }
 }
 
-
 body {
-    --border-radius: 12px;
+    --border-radius: 2px;
     --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
-    background: var(--bg-1);
+    background-image: url("assets/images/tahoe.jpeg");
+    background-color: #131313;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: var(--fg-1);
     font-family: var(--font);
     height: calc(100vh - 2rem);
     margin: 1rem;
-    line-height: 1.5
+    line-height: 1.5;
 }
 
 h1,
@@ -157,17 +161,34 @@ li form {
     margin: .5rem 0
 }
 
+main {
+    background: var(--bg-1);
+    z-index: 2;
+    border-radius: var(--border-radius);
+    gap: 1em;
+    padding: 1em;
+    border: 1px solid var(--bg-3);
+    box-shadow: 0 0 24px var(--sh-1);
+    backdrop-filter: blur(10px);
+
+    max-width: 800px;
+    margin: auto;
+}
+
 nav {
     background: var(--bg-2);
     z-index: 2;
     border-radius: var(--border-radius);
     gap: 1em;
-    margin: 0 0 1em;
+    margin: auto;
+    margin-bottom: 1em;
     padding: 1em;
+    max-width: 800px;
     display: flex;
     position: relative;
     border: 1px solid var(--bg-3);
     box-shadow: 0 0 24px var(--sh-1);
+    backdrop-filter: blur(10px);
 }
 
 nav a {
@@ -176,6 +197,38 @@ nav a {
 
 nav a[aria-current=true] {
     border-bottom: 2px solid
+}
+
+nav aside {
+    margin-left: auto;
+}
+
+footer {
+    background: var(--bg-1);
+    z-index: 2;
+    border-radius: var(--border-radius);
+    gap: 1em;
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    max-width: 800px;
+    display: flex;
+    position: relative;
+    border: 1px solid var(--bg-3);
+    box-shadow: 0 0 24px var(--sh-1);
+    backdrop-filter: blur(10px);
+}
+
+footer a {
+    text-decoration: none
+}
+
+footer a[aria-current=true] {
+    border-bottom: 2px solid
+}
+
+footer aside {
+    margin-left: auto;
 }
 
 ul:has(form) {
@@ -207,45 +260,23 @@ code {
     font-size: .9em
 }
 
-ul.todos {
-    padding: 0
+.project-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-ul.todos li form,
-ul.todos li:not(:has(>form)) {
-    user-select: none;
+.project-list li {
     background: var(--bg-1);
-    filter: drop-shadow(2px 3px 6px #0000001a);
-    border-radius: 5px;
-    align-items: center;
-    gap: .5em;
-    margin: 0 0 .5em;
-    padding: .5em .5em .5em 1em;
-    transition: filter .2s, opacity .2s;
-    display: flex;
-    position: relative
-}
-
-ul.todos .done {
-    filter: none;
-    opacity: .4
-}
-
-ul.todos button {
-    cursor: pointer;
-    aspect-ratio: 1;
-    opacity: .5;
-    background-color: #0000;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 1rem 1rem;
-    border: none;
-    width: 3em;
-    height: 3em;
-    margin: -.5em -.5em -.5em 0;
-    transition: opacity .2s
-}
-
-ul.todos button:hover {
-    opacity: 1
+    z-index: 3;
+    border-radius: var(--border-radius);
+    gap: 1em;
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    max-width: 800px;
+    position: relative;
+    border: 1px solid var(--bg-3);
+    box-shadow: 0 0 24px var(--sh-1);
+    backdrop-filter: blur(10px);
 }
