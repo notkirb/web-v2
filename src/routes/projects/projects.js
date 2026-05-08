@@ -8,7 +8,7 @@ export const projects = [
     {
         name: "Equilibrium",
         description: "Fix Windows communication devices becoming unsynced from default devices",
-        link: "Fix Windows communication devices becoming unsynced from default devices",
+        link: "https://github.com/notkirb/Equilibrium",
         link_hint: "learn more",
     },
     {
