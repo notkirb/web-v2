@@ -11,17 +11,19 @@
 <nav>
 	<a href="/">home</a>
 	<a href="/projects">projects</a>
-	<a href="/blog">blog</a>
-	<a href="https://vault.notkirb.com/">the vault</a>
 	<a href="/about">about me</a>
+	<a href="/blog">blog</a>
+	<aside>
+		<a href="https://vault.notkirb.com/">the vault</a>
+	</aside>
 </nav>
 {@render children()}
 <footer>
+	<a href="https://x.com/notkirb_">twitter</a>
 	<a href="https://github.com/notkirb">github</a>
 	<a href="https://discord.gg/qtB3F6tyBc">discord</a>
-	<a href="https://x.com/notkirb_">twitter</a>
 	<aside>
-		<img src="/assets/images/no-ai.png" alt="" style="max-height: 12px;">
-		made by a human
+		by notkirb_
+		<img src="/assets/images/no-ai.png" alt="" style="max-height: 10px;">
 	</aside>
 </footer>

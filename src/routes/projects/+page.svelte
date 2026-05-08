@@ -2,6 +2,7 @@
     /** @type {import('./$types').PageProps} */
     let { data } = $props();
 </script>
+<title>notkirb_'s projects</title>
 <main>
     <h1>say hi to some of my projects!!!!</h1>
     
