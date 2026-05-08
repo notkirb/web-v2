@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "notkirb-site",
+  "site": {
+    "bucket": "./public"
+  },
+  "env": {
+    "production": {
+      "name": "main",
+      "route": "https://notkirb.com/*"
+    }
+  }
+}
