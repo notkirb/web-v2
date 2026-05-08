@@ -12,7 +12,6 @@
 	<a href="/">home</a>
 	<a href="/projects">projects</a>
 	<a href="/about">about me</a>
-	<a href="/blog">blog</a>
 	<aside>
 		<a href="https://vault.notkirb.com/">the vault</a>
 	</aside>
