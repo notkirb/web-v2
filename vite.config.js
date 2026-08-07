@@ -3,5 +3,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [sveltekit()],
-	base: "/{repo-name}/"
+	base: "",
+	root: 'src',
+	build: {
+		outDir: '../dist'
+	}
 });
