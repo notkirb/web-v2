@@ -1,5 +1,11 @@
 export const projects = [
     {
+        name: "Kirbium",
+        description: "An unobtrusive yet functional QOL modpack for Minecraft",
+        link: "https://modrinth.com/project/pqBBMLjA",
+        link_hint: "learn more",
+    },
+    {
         name: "seedpack",
         description: "Create and distribute declarative modpacks for Minecraft",
         link: "https://github.com/notkirb/seedpack",
