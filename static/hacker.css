@@ -264,3 +264,9 @@ code {
     border: 1px solid var(--bg-3);
     border-top: none;
 }
+
+.buttonwall {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 10px;
+}
