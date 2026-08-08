@@ -1,5 +1,6 @@
 <script>
 	import favicon from '$lib/assets/favicon.svg';
+    import moment from 'moment';
 	
 
 	let { children } = $props();
@@ -27,3 +28,4 @@
 		<img src="/assets/images/no-ai.png" alt="" style="max-height: 10px;">
 	</aside>
 </footer>
+<div class="subfooter">LAST UPDATED {moment(BUILD_DATE).fromNow().toUpperCase()}</div>

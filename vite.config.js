@@ -7,5 +7,8 @@ export default defineConfig({
 	root: 'src',
 	build: {
 		outDir: 'public'
+	},
+	define: {
+		BUILD_DATE: JSON.stringify(new Date().toISOString())
 	}
 });
