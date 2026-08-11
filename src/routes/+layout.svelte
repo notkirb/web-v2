@@ -15,7 +15,7 @@
 	<a href="/projects">projects</a>
 	<a href="/about">about me</a>
 	<aside>
-		<a href="https://vault.notkirb.com/">the vault</a>
+		<a href="https://vault.notkirb.com/">the vault IS DEAD</a>
 	</aside>
 </nav>
 {@render children()}
